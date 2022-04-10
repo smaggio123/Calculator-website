@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<script src="Calculations.js"></script>
+<html>
+<body>
+    <h1>
+        Calculator
+    </h1>
+    <div><label id="num1">num1:</label></div>
+    <div><label id="operator">op:</label></div>
+    <div><label id="num2">num2:</label></div>
+    <div><label id="calculation">Calculation:</label></div>
+    
+    <div>
+        <br><button id="button1" value="1" onClick="insertNumber(1)">1</button>
+        <button id="button2" value="2" onClick="insertNumber(2)">2</button>
+        <button id="button3" value="3" onClick="insertNumber(3)">3</button>
+        <button id="addButton" value="+" onClick="setOperator('+')">+</button>
+        <button id="clearButton" value="c" onClick="clearEverything()">c</button>
+    </div>
+    <div>
+        <button id="button4" value="4" onClick="insertNumber(4)">4</button>
+        <button id="button5" value="5" onClick="insertNumber(5)">5</button>
+        <button id="button6" value="6" onClick="insertNumber(6)">6</button>
+        <button id="minusButton" value="-" onClick="setOperator('-')">-</button>
+        <button id="deleteButton" onClick="deleteNumber()">del</button>
+    </div>
+    <div>
+        <button id="button7" value="7" onClick="insertNumber(7)">7</button>
+        <button id="button8" value="8" onClick="insertNumber(8)">8</button>
+        <button id="button9" value="9" onClick="insertNumber(9)">9</button>
+        <button id="multiplicationButton" value="*" onClick="setOperator('*')">*</button>
+    </div>
+    <div>
+        <button id="negateButton" value="-1" onClick="changeSign()">+/-</button>
+        <button id="button0" value="0" onClick="insertNumber(0)">0</button>
+        <button id="decimalButton" value="." onClick="insertDecimal()">.</button>
+        <button id="equalButton" value="=" onClick="calculate()">=</button>
+    </div>
+
+</body>
+</html>
